@@ -1,22 +1,49 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
+import mongoose from 'mongoose'
 
-// Defines the port the app will run on. Defaults to 8080, but can be 
-// overridden when starting the server. For example:
-//
-//   PORT=9000 npm start
+
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/moonstone"
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.Promise = Promise
+mongoose.set('useFindAndModify', false)
+
+const Product = mongoose.model('Product', {
+  name: {
+    type: String
+  },
+  description: {
+    type: String, 
+  },
+  categories: [{
+    type: String
+  }],
+  soulPowers: [{
+    type: String
+  }],
+  price: {
+    type: Number
+  },
+  stock: {
+    type: Number
+  }
+})
+
 const port = process.env.PORT || 8080
 const app = express()
 
-// Add middlewares to enable cors and json body parsing
 app.use(cors())
 app.use(bodyParser.json())
 
-// Start defining your routes here
-app.get('/', (req, res) => {
-  res.send('Hello world')
+app.get('/products', async (req, res) => {
+  const { product } = await Product.find()
+  res.json(product)
 })
+
+
+
+
 
 // Start the server
 app.listen(port, () => {
