@@ -1,45 +1,43 @@
-{
-  "products": [
-    {
-      "name": "Rose Quartz",
-      "description": "Rose Quartz is the stone of universal love. It restores trust and harmony in relationships, encouraging unconditional love. Rose Quartz purifies and opens the heart at all levels to promote love, self-love, friendship, deep inner healing and feelings of peace.",
-      "categories": [
-        "Crystal"
-      ],
-      "soulPowers": [
-        "Love",
-        "Heart",
-        "Relationship"
-      ],
-      "price": 49,
-      "inventory": 1
-    },
+[
+  {
+    "name": "Rose Quartz",
+    "description": "Rose Quartz is the stone of universal love. It restores trust and harmony in relationships, encouraging unconditional love. Rose Quartz purifies and opens the heart at all levels to promote love, self-love, friendship, deep inner healing and feelings of peace.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Love",
+      "Heart",
+      "Relationship"
+    ],
+    "price": 49,
+    "inventory": 11
+  },
+  {
+    "name": "Selenite",
+    "description": "Selenite is a calming stone that instils deep peace and is excellent for meditation or spiritual work. It assists judgement and insight. It clears confusion and aids in seeing the deeper picture",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Calmness",
+      "Mind",
+      "Clarity"
+    ],
+    "price": 89,
+    "inventory": 11
+  },
+   {
+    "name": "Palo Santo",
+    "description": "Use this to cleanse and heal our home from negative energy.",
+    "categories": [
+      "Incense"
+    ],
+    "soulPowers": [
+      "Healing", "Cleansing", "Calmness"
+    ],
+    "price": 55,
+    "inventory": 11
+  }
 
-    {
-      "name": "Selenite",
-      "description": "Selenite is a calming stone that instils deep peace and is excellent for meditation or spiritual work. It assists judgement and insight. It clears confusion and aids in seeing the deeper picture",
-      "categories": [
-        "Crystal"
-      ],
-      "soulPowers": [
-        "Calmness", 
-        "Mind", 
-        "Clarity"
-      ],
-      "price": 55,
-      "inventory": 1
-    }
-    // {
-    //   "name": "",
-    //   "description": "",
-    //   "categories": [
-    //     ""
-    //   ],
-    //   "soulPowers": [
-    //     ""
-    //   ],
-    //   "price": ,
-    //   "inventory":
-    // },
-  ]
-}
+]

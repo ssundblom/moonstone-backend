@@ -3,6 +3,8 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import mongoose from 'mongoose'
 
+import products from './products.json'
+
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/moonstone"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -25,10 +27,28 @@ const Product = mongoose.model('Product', {
   price: {
     type: Number
   },
-  stock: {
+  inventory: {
     type: Number
+  },
+  createdAt: {
+    type: Number,
+    default: Date.now() 
   }
 })
+
+if (process.env.RESET_DATABASE) {
+  console.log('RESETTING DATABASE')
+
+  const populateDatabase = async () => {
+    await Product.deleteMany()
+
+    products.forEach(product => {
+      const newProduct = new Product(product)
+      newProduct.save()
+    })
+  }
+  populateDatabase()
+}
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -36,12 +56,14 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
+
 app.get('/products', async (req, res) => {
-  const { product } = await Product.find()
-  res.json(product)
+  console.log(req.query)
+  const products = await Product
+  .find(req.query.c ? { categories: {"$in": req.query.c}} : {} )
+  .find(req.query.sp ? { soulPowers: {"$in": req.query.sp}} : {} )
+  res.json(products)
 })
-
-
 
 
 
@@ -49,3 +71,16 @@ app.get('/products', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })
+
+  // {
+  //   "name": "",
+  //   "description": "",
+  //   "categories": [
+  //     ""
+  //   ],
+  //   "soulPowers": [
+  //     ""
+  //   ],
+  //   "price": ,
+  //   "inventory":
+  // },
