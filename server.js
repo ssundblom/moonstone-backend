@@ -58,13 +58,18 @@ app.use(bodyParser.json())
 
 
 app.get('/products', async (req, res) => {
-  console.log(req.query)
   const products = await Product
   .find(req.query.c ? { categories: {"$in": req.query.c}} : {} )
   .find(req.query.sp ? { soulPowers: {"$in": req.query.sp}} : {} )
+// add handling of other params and .sort(by most recent? cheapest?) here .exec()
   res.json(products)
 })
 
+app.get('/products/:productId', async (req, res) => {
+  console.log(req.params.productId) 
+  const product = await Product.findById(req.params.productId)
+  res.json(product)
+})
 
 
 // Start the server
