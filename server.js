@@ -24,6 +24,9 @@ const Product = mongoose.model('Product', {
   soulPowers: [{
     type: String
   }],
+  images: [{
+    type: String
+  }],
   price: {
     type: Number
   },
@@ -38,7 +41,6 @@ const Product = mongoose.model('Product', {
 
 if (process.env.RESET_DATABASE) {
   console.log('RESETTING DATABASE')
-
   const populateDatabase = async () => {
     await Product.deleteMany()
 
@@ -66,7 +68,6 @@ app.get('/products', async (req, res) => {
 })
 
 app.get('/products/:productId', async (req, res) => {
-  console.log(req.params.productId) 
   const product = await Product.findById(req.params.productId)
   res.json(product)
 })

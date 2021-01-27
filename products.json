@@ -10,6 +10,7 @@
       "Heart",
       "Relationship"
     ],
+    "images": ["crystals/rose_gxhz76.jpg"],
     "price": 49,
     "inventory": 11
   },
@@ -24,6 +25,7 @@
       "Mind",
       "Clarity"
     ],
+    "images": ["crystals/selenite_s2lsqo.jpg"],
     "price": 89,
     "inventory": 11
   },
@@ -36,6 +38,7 @@
     "soulPowers": [
       "Healing", "Cleansing", "Calmness"
     ],
+    "images": ["crystals/palosanto_u2uh3x.jpg"],
     "price": 55,
     "inventory": 11
   }
