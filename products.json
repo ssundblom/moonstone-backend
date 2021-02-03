@@ -7,10 +7,11 @@
     ],
     "soulPowers": [
       "Love",
-      "Heart",
       "Relationship"
     ],
-    "images": ["crystals/rose_gxhz76.jpg"],
+    "images": [
+      "crystals/rose_gxhz76.jpg"
+    ],
     "price": 49,
     "inventory": 11
   },
@@ -21,26 +22,149 @@
       "Crystal"
     ],
     "soulPowers": [
-      "Calmness",
-      "Mind",
+      "Calm",
       "Clarity"
     ],
-    "images": ["crystals/selenite_s2lsqo.jpg"],
+    "images": [
+      "crystals/selenite_s2lsqo.jpg"
+    ],
     "price": 89,
     "inventory": 11
   },
-   {
+  {
     "name": "Palo Santo",
     "description": "Use this to cleanse and heal our home from negative energy.",
     "categories": [
       "Incense"
     ],
     "soulPowers": [
-      "Healing", "Cleansing", "Calmness"
+      "Healing",
+      "Calm"
     ],
-    "images": ["crystals/palosanto_u2uh3x.jpg"],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 55,
+    "inventory": 11
+  },
+  {
+    "name": "Amethyst",
+    "description": "Is a very meditative and calming stone, nature's own tranquilizer. It helps you to let go of what’s not longer in service to you as negative feelings, thoughts, anger and anxiety. methyst is a powerful and protective stone that works both on the emotional and the spiritual field. Meditate with your amethyst to relieve stress and calm down and open up to listen to the higher you.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Protection",
+      "Spirituality",
+      "Calmn"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 55,
+    "inventory": 11
+  },
+  {
+    "name": "Green Calcite",
+    "description": "Green Calcite is the perfect company on your journey of self discovery. It will help you embrace all your flaws and imperfections to realize that is what makes you unique and make you accept yourself wholly. Will bring balance in mind, body, spritit and heart and fill you with vitality and enthusiasm to manifest your dreams.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Change",
+      "Motivation"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 115,
+    "inventory": 11
+  },
+  {
+    "name": "Pyrite",
+    "description": "Pyrite is known as a stone of luck! It will help you attract abundance, wealth and prosperity. Pyrite seems to set your soul on fire! It will boost your creativity and motivation and invites you to step into your own potential - you will feel your confidence growing and your inner power multiple. Pyrite will help you step away from negative thoughts and fears and help you overcome what is holding you back. It is time to follow your heart and take the action needed to live the life you dream of.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Abundance",
+      "Success",
+      "Creativity",
+      "Power"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 150,
+    "inventory": 11
+  },
+  {
+    "name": "Malachite",
+    "description": "Also called the stone of transformation. It will help you to transform your negative thoughts, break out of old habits and will hold your hand as you let go of the past and step in into your future. This stone is all about balance, abundance, manifestation and intention. It will open your eyes to the beauty of the small things in life and make you more aware of how you can use everything around you to make yourself feel better, happier and more at peace.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Abundance",
+      "Change",
+      "Love"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 45,
+    "inventory": 11
+  },
+  {
+    "name": "Green Aventurine",
+    "description": "This is the stone of good luck! It’s known to bring success, abundance and a flow of good fortune. Will help you find motivation and boost your creativity to reach your dreams and goals. Increases your empathy and compassion. Will help you see life from a more positive perspective and a more open mindset. Stands for personal growth and development. It will open up your heart and help you to listen to that inner voice so we can make decisions based on our own beliefs and dreams without fearing what others may think of you. ",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Abundance",
+      "Success",
+      "Creatitivy"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 65,
+    "inventory": 11
+  },
+  {
+    "name": "Citrine",
+    "description": "Your own ray of sunshine! This is a real mood booster! Positive vibes are coming your way with this little bomb of power. You will feel filled with positive energy and have an easier time to connect to your inner light and bring sunshine and optimism on all the areas of your life. Will uplift your spirit  and increase your confidence and personal power. Reminds you to choose happiness and light, even when times are tough. Whenever you feel that inner light dim or catch yourself in a negative cycle, use the Citrine to tap into feelings of happiness and joy within yourself.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Abundance",
+      "Power",
+      "Motivation",
+      "Energy"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
+    "price": 35,
+    "inventory": 11
+  },
+  {
+    "name": "Orange Calcite",
+    "description": "This is a real confidence and energy booster! It is known for its properties of speeding up development and growth. It will increase the flow of positive energies both in your body and mind but also in your surroundings to help you get rid of old patterns of thinking and behaviors. It will also boost your creativity! Enabling you to solve problems more quickly and find joy in being more creative.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Creativity",
+      "Energy"
+    ],
+    "images": [
+      "crystals/palosanto_u2uh3x.jpg"
+    ],
     "price": 55,
     "inventory": 11
   }
-
+  
 ]

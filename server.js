@@ -41,6 +41,7 @@ const Product = mongoose.model('Product', {
 
 if (process.env.RESET_DATABASE) {
   console.log('RESETTING DATABASE')
+
   const populateDatabase = async () => {
     await Product.deleteMany()
 
