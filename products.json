@@ -59,7 +59,7 @@
       "Calmn"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/amethystes2_ya5xk0.jpg"
     ],
     "price": 55,
     "inventory": 11
@@ -93,7 +93,7 @@
       "Power"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/pyriteWprops_ckakuk.jpg"
     ],
     "price": 150,
     "inventory": 11
@@ -110,7 +110,7 @@
       "Love"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/malachite1_ekugu7.jpg"
     ],
     "price": 45,
     "inventory": 11
@@ -127,7 +127,7 @@
       "Creatitivy"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/greenAventurine_hsbkvm.jpg"
     ],
     "price": 65,
     "inventory": 11
@@ -145,9 +145,9 @@
       "Energy"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/citrines_xxlmxw.jpg"
     ],
-    "price": 35,
+    "price": 55,
     "inventory": 11
   },
   {
@@ -161,9 +161,43 @@
       "Energy"
     ],
     "images": [
-      "crystals/palosanto_u2uh3x.jpg"
+      "crystals/orangecalciteWprops_plpwyk.jpg"
     ],
     "price": 55,
+    "inventory": 11
+  },
+  {
+    "name": "Moonstone",
+    "description": "This is the stone of “new beginnings”. If you are feeling lost, whether you’re changing careers, discovering new passions or even thinking about making a change in your life, the Moonstone is here to guide you on your journey and shine light on the path that lays ahead. It will help you navigate on your journey with clarity and confidence. It will sooth any emotional stress and provide calmness. It will enhance your intuition to promote inspiration, success and good fortune both in love and in business. This is also a very feminin, sensual stone that will help you tap into your inner goddess and unlock a strong, empowering energy that will allow you to get back to your natural rhythm.",
+    "categories": [
+      "Crystal"
+    ],
+    "soulPowers": [
+      "Power",
+      "Succuess",
+      "Abundance",
+      "Motivation"
+    ],
+    "images": [
+      "crystals/moonstones_s0obtv.jpg"
+    ],
+    "price": 95,
+    "inventory": 11
+  },
+  {
+    "name": "White Sage",
+    "description": "Use this to cleanse and heal our home from negative energy.",
+    "categories": [
+      "Incense"
+    ],
+    "soulPowers": [
+      "Healing",
+      "Calm"
+    ],
+    "images": [
+      "crystals/Sage_w7pu0k.jpg"
+    ],
+    "price": 75,
     "inventory": 11
   }
   
