@@ -5,7 +5,6 @@ import mongoose from 'mongoose'
 
 import products from './products.json'
 
-
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/moonstone"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
@@ -16,7 +15,7 @@ const Product = mongoose.model('Product', {
     type: String
   },
   description: {
-    type: String, 
+    type: String,
   },
   categories: [{
     type: String
@@ -35,7 +34,7 @@ const Product = mongoose.model('Product', {
   },
   createdAt: {
     type: Number,
-    default: Date.now() 
+    default: Date.now()
   }
 })
 
@@ -59,12 +58,10 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-
 app.get('/products', async (req, res) => {
   const products = await Product
-  .find(req.query.c ? { categories: {"$in": req.query.c}} : {} )
-  .find(req.query.sp ? { soulPowers: {"$in": req.query.sp}} : {} )
-// add handling of other params and .sort(by most recent? cheapest?) here .exec()
+    .find(req.query.c ? { categories: { "$in": req.query.c } } : {})
+    .find(req.query.sp ? { soulPowers: { "$in": req.query.sp } } : {})
   res.json(products)
 })
 
@@ -74,20 +71,6 @@ app.get('/products/:productId', async (req, res) => {
 })
 
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })
-
-  // {
-  //   "name": "",
-  //   "description": "",
-  //   "categories": [
-  //     ""
-  //   ],
-  //   "soulPowers": [
-  //     ""
-  //   ],
-  //   "price": ,
-  //   "inventory":
-  // },

@@ -1,7 +1,14 @@
-# Express Starter Project
+#  Moonstone
+ This is the backend repository for my final project in Technigo's Bootcamp. 
 
-This project includes the packages and babel setup for an express server, and is just meant to make things a little simpler to get up and running with.
 
-## Getting started
+## Tech I've used
+Node.js
+MongoDB 
 
-Install dependencies with `npm install`, then start the server by running `npm run dev`
+
+Frontend repo: https://github.com/ssundblom/moonstone-frontend 
+
+## View it Live 🌟
+
+https://moonstone.space/
